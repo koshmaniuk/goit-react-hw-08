@@ -13,12 +13,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 76px;
 }
 
 .errorMsg {
   position: absolute;
   left: 0;
-  top: 46px;
+  top: 56px;
   color: orangered;
   font-size: 14px;
 }
@@ -32,4 +33,15 @@
 
 .contactFormBtn:hover {
   background-color: #3c6ecc;
+}
+
+.inputField {
+  height: 26px;
+}
+
+.form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

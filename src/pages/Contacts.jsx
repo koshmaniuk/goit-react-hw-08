@@ -7,7 +7,7 @@ import { ContactForm } from "../components/ContactForm/ContactForm";
 import { SearchBox } from "../components/SearchBox/SearchBox";
 import { ContactList } from "../components/ContactList/ContactList";
 
-export default function Tasks() {
+export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectLoading);
 

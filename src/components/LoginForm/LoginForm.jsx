@@ -49,12 +49,22 @@ export const LoginForm = () => {
       <Form className={css.form}>
         <div className={css.contactFormInput}>
           <label htmlFor={emailFieldId}>email</label>
-          <Field type="text" name="email" id={emailFieldId} />
+          <Field
+            className={css.inputField}
+            type="text"
+            name="email"
+            id={emailFieldId}
+          />
           <ErrorMessage className={css.error} name="email" component="span" />
         </div>
         <div className={css.contactFormInput}>
           <label htmlFor={passwordFieldId}>password</label>
-          <Field type="password" name="password" id={passwordFieldId} />
+          <Field
+            className={css.inputField}
+            type="password"
+            name="password"
+            id={passwordFieldId}
+          />
           <ErrorMessage
             className={css.errorMsg}
             name="password"

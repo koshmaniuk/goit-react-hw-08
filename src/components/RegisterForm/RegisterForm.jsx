@@ -49,21 +49,41 @@ export const RegisterForm = () => {
       initialValues={initialValues}
       onSubmit={handleSubmit}
       validationSchema={RegisterSchema}
+      className={css.main}
     >
       <Form className={css.form}>
         <div className={css.contactFormInput}>
           <label htmlFor={nameFieldId}>Username</label>
-          <Field type="text" name="name" id={nameFieldId} />
+          <Field
+            className={css.inputField}
+            type="text"
+            name="name"
+            id={nameFieldId}
+          />
           <ErrorMessage className={css.errorMsg} name="name" component="span" />
         </div>
         <div className={css.contactFormInput}>
           <label htmlFor={emailFieldId}>email</label>
-          <Field type="email" name="email" id={emailFieldId} />
-          <ErrorMessage className={css.error} name="email" component="span" />
+          <Field
+            className={css.inputField}
+            type="email"
+            name="email"
+            id={emailFieldId}
+          />
+          <ErrorMessage
+            className={css.errorMsg}
+            name="email"
+            component="span"
+          />
         </div>
         <div className={css.contactFormInput}>
           <label htmlFor={passwordFieldId}>password</label>
-          <Field type="password" name="password" id={passwordFieldId} />
+          <Field
+            className={css.inputField}
+            type="password"
+            name="password"
+            id={passwordFieldId}
+          />
           <ErrorMessage
             className={css.errorMsg}
             name="password"
