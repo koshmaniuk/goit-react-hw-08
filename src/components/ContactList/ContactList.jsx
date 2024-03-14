@@ -3,7 +3,7 @@ import css from "./ContactList.module.css";
 import { useSelector } from "react-redux";
 import { selectFilteredContacts } from "../../redux/selectors";
 
-const ContactList = () => {
+export const ContactList = () => {
   const filteredContacts = useSelector(selectFilteredContacts);
   const { loading, error } = useSelector((state) => state.contacts);
 
@@ -17,7 +17,7 @@ const ContactList = () => {
             key={contact.id}
             contactId={contact.id}
             name={contact.name}
-            phoneNumber={contact.phone}
+            phoneNumber={contact.number}
           />
         ))}
       </ul>
@@ -25,4 +25,4 @@ const ContactList = () => {
   );
 };
 
-export default ContactList;
+// export default ContactList;

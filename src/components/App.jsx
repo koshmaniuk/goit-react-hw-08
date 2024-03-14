@@ -1,8 +1,5 @@
 import "./App.css";
-// import ContactList from "./ContactList/ContactList.jsx";
-// import SearchBox from "./SearchBox/SearchBox.jsx";
-// import ContactForm from "./ContactForm/ContactForm.jsx";
-// import { fetchContacts } from "../redux/operations";
+
 import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
@@ -16,7 +13,7 @@ import { useAuth } from "../hooks";
 const HomePage = lazy(() => import("../pages/Home"));
 const RegisterPage = lazy(() => import("../pages/Register"));
 const LoginPage = lazy(() => import("../pages/Login"));
-const TasksPage = lazy(() => import("../pages/Contacts"));
+const ContactsPage = lazy(() => import("../pages/Contacts"));
 
 const App = () => {
   const dispatch = useDispatch();
@@ -51,12 +48,11 @@ const App = () => {
           <Route
             path="/tasks"
             element={
-              <PrivateRoute redirectTo="/login" component={<TasksPage />} />
+              <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
             }
           />
         </Route>
       </Routes>
-      {/* <Toaster /> */}
     </>
   );
 };

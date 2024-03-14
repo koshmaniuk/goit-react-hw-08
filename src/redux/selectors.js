@@ -4,6 +4,8 @@ export const selectNameFilter = (state) => state.filter.name;
 
 export const selectContacts = (state) => state.contacts.items;
 
+export const selectLoading = (state) => state.contacts.loading;
+
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectNameFilter],
   (contacts, filter) => {
