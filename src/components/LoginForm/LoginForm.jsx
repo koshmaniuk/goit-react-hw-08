@@ -48,7 +48,7 @@ export const LoginForm = () => {
     >
       <Form className={css.form}>
         <div className={css.contactFormInput}>
-          <label htmlFor={emailFieldId}>email</label>
+          <label htmlFor={emailFieldId}>Email</label>
           <Field
             className={css.inputField}
             type="text"
@@ -58,7 +58,7 @@ export const LoginForm = () => {
           <ErrorMessage className={css.error} name="email" component="span" />
         </div>
         <div className={css.contactFormInput}>
-          <label htmlFor={passwordFieldId}>password</label>
+          <label htmlFor={passwordFieldId}>Password</label>
           <Field
             className={css.inputField}
             type="password"

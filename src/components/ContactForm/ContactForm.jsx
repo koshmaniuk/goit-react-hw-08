@@ -47,7 +47,11 @@ export const ContactForm = () => {
         <div className={css.contactFormInput}>
           <label htmlFor={numberFieldId}>Number</label>
           <Field type="text" name="number" id={numberFieldId} />
-          <ErrorMessage className={css.error} name="number" component="span" />
+          <ErrorMessage
+            className={css.errorMsg}
+            name="number"
+            component="span"
+          />
         </div>
         <button className={css.contactFormBtn} type="submit">
           Add contact
