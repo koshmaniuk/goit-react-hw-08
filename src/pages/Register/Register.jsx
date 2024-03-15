@@ -1,4 +1,4 @@
-import DocumentTitle from "../../components/DocumentTitle";
+import DocumentTitle from "../../components/DocumentTitle/DocumentTitle";
 import RegisterForm from "../../components/RegisterForm/RegisterForm";
 import css from "./Register.module.css";
 
