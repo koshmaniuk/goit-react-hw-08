@@ -26,7 +26,7 @@ const initialValues = {
   password: "",
 };
 
-export const RegisterForm = () => {
+const RegisterForm = () => {
   const dispatch = useDispatch();
 
   const nameFieldId = useId();
@@ -97,3 +97,5 @@ export const RegisterForm = () => {
     </Formik>
   );
 };
+
+export default RegisterForm;

@@ -3,7 +3,7 @@ import css from "./SearchBox.module.css";
 import { selectNameFilter } from "../../redux/selectors";
 import { changeFilter } from "../../redux/filtersSlice";
 
-export const SearchBox = () => {
+const SearchBox = () => {
   const dispatch = useDispatch();
   const value = useSelector(selectNameFilter);
 
@@ -19,3 +19,5 @@ export const SearchBox = () => {
     </div>
   );
 };
+
+export default SearchBox;

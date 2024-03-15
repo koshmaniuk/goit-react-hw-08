@@ -16,7 +16,7 @@ const initialValues = {
   password: "",
 };
 
-export const LoginForm = () => {
+const LoginForm = () => {
   const dispatch = useDispatch();
 
   const emailFieldId = useId();
@@ -78,3 +78,5 @@ export const LoginForm = () => {
     </Formik>
   );
 };
+
+export default LoginForm;
